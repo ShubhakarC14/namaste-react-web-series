@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Namaste React Web Series</title>
+</head>
+<body>
+    <div id="root">
+       <!-- <h1>Schumi Returns</h1>  this will be replaced after render(root) what ever is passed in render will be replaced with the old elements-->
+    </div>
+    <!-- JavaScript code -->
+    <!-- <script>
+        const heading = document.createElement("h1");
+        const root = document.getElementById("root");
+        heading.innerHTML = "Hello World from JavaScript !!"
+        root.appendChild(heading);
+    </script> -->
+     <!-- Adding Cdn to the html page is the shortest react app -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src ="./App.js"></script>
+    <!-- This order of script tag matters as app.js uses create element which is react if we put this up then we get error react is not defined -->
+</body>
+</html>
